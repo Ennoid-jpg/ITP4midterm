@@ -29,37 +29,42 @@ header{
     padding: 0 2rem;
 }
 .grid-container {
-    align-content: center;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 10px;
-    margin: 14%;
     padding: 10px;
+    margin: 5%; 
   }
   
   .grid-container > div {
     text-align: justify;
     padding: 20px 0;
     font-size: small;
-    
   }
   
   .item1 {
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 3; 
   }
-  .item2{
-    grid-column-start: 3;
-    grid-column-end: 4;
+  
+  .item2, .item3 {
     align-items: center;
     max-width: 100%;
     height: auto;
-  }.item3{
-    grid-column-start: 4;
-    grid-column-end: 5;
-    align-items: center;
-    max-width: 200%;
-    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      margin: 5%; 
+    }
+  
+    .item1 {
+      grid-column-end: 4; 
+    }
+  
+    .item3 {
+      display: none; 
+    }
   }
   
 .navbar{
