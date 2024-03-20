@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stylehome.css" />
+    <title>Palawan</title>
+  </head>
+  <body>
+    <header>
+    <div class="navbar">
+    <div class="logo"><a href="index.html">Palawan, Coron</a></div>
+    <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="spots.html">Attractions</a></li>
+        <li><a href="geography">Geography</a></li>
+        <li><a href="demographics">Demographics</a></li>
+    </ul>
+    <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    </div>
+    <div class="dropdown_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="spots.html">Attractions</a></li>
+        <li><a href="geography">Geography</a></li>
+        <li><a href="demographics">Demographics</a></li>
+    </div>
+    </header>
+    <section id="home">
+        <h1>Geography Of Palawan Coron</h1>
+        <h4>Coron</h4>
+        
+        <br>
+        
+    </section>
+    <section id="sechome">
+        <h2>Geography</h2>
+        <br>
+        <div class="grid-container">
+            
+            <div class="item1">  Coron, located in the northern region of Palawan, forms part of the Calamianes Group of Islands, an archipelago featuring about 100 islands and islets. These islands are characterized by their rugged limestone cliffs, dense forests, and unspoiled beaches.
+            
+                The landscape of Coron is dominated by towering limestone karsts that rise from the clear waters of the sea, creating a striking backdrop for the island's attractions and popular activities such as hiking and rock climbing.
+                
+                Coron is renowned for its inland lakes and concealed lagoons, nestled amidst the limestone cliffs. Kayangan Lake and Barracuda Lake are among the most famous, admired for their pristine waters and captivating beauty, often included in island-hopping itineraries.
+                
+                The surrounding waters of Coron harbor a diverse range of marine life, including vibrant coral reefs, tropical fish, and other underwater creatures, attracting snorkeling and scuba diving enthusiasts.
+                
+                An intriguing aspect of Coron's underwater landscape is its numerous Japanese shipwrecks from World War II. These wrecks, situated in relatively shallow waters, serve as artificial reefs, flourishing with marine life and drawing divers to explore their depths.
+                
+                Coron experiences a tropical climate with distinct dry (November to April) and wet seasons (May to October), offering favorable conditions for outdoor activities during the dry season.
+    
+                The town of Coron serves as the primary hub for tourists, providing accommodation, dining options, souvenir shops, and tour agencies facilitating island-hopping adventures and other recreational activities. 
+    
+                In summary, Coron's geography is characterized by its remarkable natural features, both on land and underwater, making it an irresistible destination for travelers seeking adventure, relaxation, and immersion in pristine surroundings. </div>
+            <div class="item3"><img src="Coron_Town.jpg" alt="Coron_Town"></div>
+            <div class="item1">
+                Embark on an unforgettable journey to Palawan, a captivating island province situated in the western part of the Philippines. Palawan is a veritable treasure trove of natural wonders, offering a diverse landscape that ranges from majestic mountain ranges to picturesque coastal plains, making it an ideal destination for adventurers and nature enthusiasts alike. <br><br>
+
+                Palawan's claim to fame lies in its remarkable biodiversity, boasting an abundance of endemic species and serving as a sanctuary for numerous protected areas. From the enchanting Puerto Princesa Subterranean River National Park, a UNESCO World Heritage Site renowned for its underground river system, to the pristine Tubbataha Reefs Natural Park, a haven for divers with its vibrant coral reefs and diverse marine life, Palawan is a paradise teeming with ecological wonders waiting to be explored. <br><br>
+                
+                Nestled within the northern reaches of Palawan lies the captivating Coron Island, a jewel of the province characterized by its towering limestone cliffs, emerald-green lagoons, and intriguing historical shipwrecks. Coron beckons adventurers to delve into its underwater realm, where colorful coral gardens and hidden treasures await beneath the surface, offering snorkelers and divers an immersive experience like no other. <br><br>
+                
+                Palawan's tropical climate sets the stage for year-round exploration, with warm temperatures prevailing throughout the seasons. While the dry season, from November to April, offers clear skies and calm seas ideal for outdoor activities, the wet season, from May to October, brings occasional rains and typhoons, adding a touch of dramatic allure to the island's natural splendor. <br><br>
+                
+                Beyond its ecological marvels, Palawan's geological significance adds another layer of fascination to its allure. The province's karst limestone formations, sculpted over millions of years by tectonic forces, create a stunning backdrop of towering cliffs, intricate cave systems, and rugged landscapes that beckon adventurers to uncover their secrets. <br><br>
+                
+                As you journey through Palawan's diverse landscapes and vibrant ecosystems, you'll discover a destination that captivates the senses and ignites the spirit of exploration. Whether you're seeking adrenaline-pumping adventures, tranquil retreats amidst nature, or immersive cultural experiences, Palawan promises an unforgettable odyssey that will leave you enchanted and inspired. <br><br>
+            </div>  
+            <div class="item3"><img src="Ph_locator_palawan_coron.png" alt="Ph_locator_palawan_coron"></div>
+            <div class="item5"></div>
+            <div class="item6">6</div>
+            <div class="item7">7</div>
+            <div class="item8">8</div>  
+          </div>
+        
+    </section>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+  </body>
+</html>
