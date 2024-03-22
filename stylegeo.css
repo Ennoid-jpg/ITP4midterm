@@ -43,6 +43,7 @@ header{
   }
   
   .item1 {
+    color: #000;
     grid-column-start: 1;
     grid-column-end: 3; 
   }
