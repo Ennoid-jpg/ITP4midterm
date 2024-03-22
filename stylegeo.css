@@ -60,6 +60,7 @@ header{
     }
   
     .item1 {
+
       grid-column-end: 4; 
     }
   
@@ -69,6 +70,7 @@ header{
   }
   
 .navbar{
+    color: #000;
     width: 100%;
     height: 60px;
     max-width: 1200px;
